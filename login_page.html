@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resident Login</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/fav.png" rel="icon">
+
+  <!-- Our CSS File -->
+  <link rel="stylesheet" type="text/css" href="assets/css/login_page.css" />
+
+  <!-- Importing Poppins Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
+
+  <!-- Including Fontawesome JS -->
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+  <!-- Loading some meta compatibilites -->
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <!-- Added Lottie Dependency -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <!-- Added Lottie Animated Player -->
+  <lottie-player class="wave" src="https://assets1.lottiefiles.com/packages/lf20_k8gFci.json" background="transparent"
+    speed="1" style="width: 800px; height: 800px;" loop autoplay></lottie-player>
+
+  <!-- Login Container -->
+  <div class="container">
+    <div class="img"></div>
+    <div class="login-content">
+
+      <!-- Login Form -->
+      <form action="backend/user_login.php" method="POST">
+        <img src="assets/img/avtaar.svg" />
+        <h2 class="title">Resident Login</h2>
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <h5>Username</h5>
+            <input type="text" class="input" name="username" />
+          </div>
+        </div>
+        <div class="input-div pass">
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="div">
+            <h5>Password</h5>
+            <input type="password" class="input" id="password" name="password" />
+            <i class="far fa-eye password-toggle" id="togglePassword"></i>
+          </div>
+        </div>
+        <a href="#">Forgot Password?</a>
+        <input type="submit" class="btn" value="Login" />
+      </form>
+    </div>
+  </div>
+
+  <div class="social-panel-container">
+    <div class="social-panel">
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+      <h4>Get Back To</h4>
+      <ul>
+        <li>
+          <a href="index.php">
+            <i class="fas fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a href="register.html">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
+            <i class="fas fa-headset"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button class="floating-btn">
+    Go Back
+  </button>
+  <script type="text/javascript" src="assets/js/login_page.js"></script>
+</body>
+
+</html>
