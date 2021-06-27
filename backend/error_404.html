@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading some meta compatibilites -->
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="/Society_Auditor/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .lottie
+        {
+            height: 90vh;
+            width: 90%;
+        }
+        .container
+        {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+    <title>404 Not Found</title>
+</head>
+
+<body>
+    <!-- Added Lottie Dependency -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Added Lottie Animated Player -->
+    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_aaesnvcw.json"  background="transparent"  speed="1" class="lottie"  loop autoplay></lottie-player>
+
+    <div class="container">
+        <button class="btn btn-outline-primary" id="backHome">Go Back to Home</button>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var b1 = document.getElementById('backHome');
+        b1.addEventListener('click', ()=>
+        {
+            window.location = "/Society_Auditor/index.php";
+        });
+    </script>
+</body>
+
+</html>

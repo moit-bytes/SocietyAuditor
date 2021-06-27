@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importing Bulma -->
+    <link rel="stylesheet" href="assets/vendor/bulma/css/bulma.min.css">
+
+    
+    <!-- Include FontAwesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- Internal our styles-->
+    <link rel="stylesheet" href="assets/css/admin_login.css">
+
+    <title>Admin Login</title>
+</head>
+
+<body>
+    <header>
+        <button class="button"><i class="fas fa-home icon"></i>&nbsp;&nbsp;Home</button>
+    </header>
+    <div class="container">
+        <h2 class="heading">Admin Login</h2>
+        <form class="box" method="POST" action="backend/admin_login.php">
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input class="input" name="email" type="text" placeholder="e.g. mohit@example.com">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Password</label>
+                <div class="control">
+                    <input class="input" name="password" type="password" placeholder="********">
+                </div>
+            </div>
+
+            <button class="button is-dark">Sign in</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

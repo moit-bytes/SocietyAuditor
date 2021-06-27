@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.6.0.js"></script>
+  <title>Basic Video Call -- Agora</title>
+  <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container-fluid banner">
+    <p class="banner-text">Enter Your Society Meeting Credentials</p>
+    <a style="color: rgb(255, 255, 255);fill: rgb(255, 255, 255);fill-rule: evenodd; position: absolute; right: 10px; top: 4px;"
+      class="Header-link " href="user_dashboard.php">
+
+      <svg class="octicon octicon-mark-github v-align-middle" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 24.962891 1.0546875 A 1.0001 1.0001 0 0 0 24.384766 1.2636719 L 1.3847656 19.210938 A 1.0005659 1.0005659 0 0 0 2.6152344 20.789062 L 4 19.708984 L 4 46 A 1.0001 1.0001 0 0 0 5 47 L 18.832031 47 A 1.0001 1.0001 0 0 0 19.158203 47 L 30.832031 47 A 1.0001 1.0001 0 0 0 31.158203 47 L 45 47 A 1.0001 1.0001 0 0 0 46 46 L 46 19.708984 L 47.384766 20.789062 A 1.0005657 1.0005657 0 1 0 48.615234 19.210938 L 41 13.269531 L 41 6 L 35 6 L 35 8.5859375 L 25.615234 1.2636719 A 1.0001 1.0001 0 0 0 24.962891 1.0546875 z M 25 3.3222656 L 44 18.148438 L 44 45 L 32 45 L 32 26 L 18 26 L 18 45 L 6 45 L 6 18.148438 L 25 3.3222656 z M 37 8 L 39 8 L 39 11.708984 L 37 10.146484 L 37 8 z M 20 28 L 30 28 L 30 45 L 20 45 L 20 28 z"/></svg>
+    </a>
+  </div>
+
+  <div id="success-alert" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> You can invite others join this channel by click </span><a href="" target="_blank">here</a>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div id="success-alert-with-token" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> Joined room successfully. </span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div id="success-alert-with-token" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> Joined room successfully. </span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
+  <div class="container">
+    <form id="join-form">
+      <div class="row join-info-group">
+        <div class="col-sm">
+          <p class="join-info-text">Your App ID</p>
+          <input id="appid" type="text" placeholder="Enter Your APP ID" required>
+          <p class="tips">Don't know your app id, go to <a href="user_dashboard.php">Notice Board</a></p>
+        </div>
+        <div class="col-sm">
+          <p class="join-info-text">Token</p>
+          <input id="token" type="text" placeholder="Enter your Token" required>
+          <p class="tips">Don't know your token, go to <a href="user_dashboard.php">Notice Board</a></p>
+        </div>
+        <div class="col-sm">
+          <p class="join-info-text">Channel</p>
+          <input id="channel" type="text" placeholder="Enter Your Channel Name" required>
+          <p class="tips">Don't know your channel name, go to <a href="user_dashboard.php">Notice Board</a></p>
+        </div>
+    </div>
+
+      <div class="button-group">
+        <button id="join" type="submit" class="btn btn-primary btn-sm">Join</button>
+        <button id="leave" type="button" class="btn btn-primary btn-sm" disabled>Leave</button>
+      </div>
+    </form>
+
+    <div class="row video-group">
+      <div class="col">
+        <p id="local-player-name" class="player-name"></p>
+        <div id="local-player" class="player"></div>
+      </div>
+      <div class="w-100"></div>
+      <div class="col">
+        <div id="remote-playerlist"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./vendor/jquery-3.4.1.min.js"></script>
+  <script src="./vendor/bootstrap.bundle.min.js"></script>
+  <script src="./AgoraRTC_N-4.5.0.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

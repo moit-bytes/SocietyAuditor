@@ -48,6 +48,9 @@ include 'backend/user_dash.php';
         <a href="." class="navbar-item">
           <i class="fas fa-home icon"></i> Home
         </a>
+        <a target="_blank" href="agora.html" class="navbar-item">
+          <i class="fas fa-users icon"></i>&nbsp; Join Society Meeting
+        </a>
       </div>
       <div class="navbar-end">
         <a class="navbar-item modal-button" id="notification-model" data-target="#modal">
